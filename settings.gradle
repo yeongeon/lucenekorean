@@ -1,0 +1,4 @@
+rootProject.name = 'lucenekorean'
+include 'arirang.morph'
+include 'arirang.lucene-analyzer'
+
