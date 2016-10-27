@@ -1,4 +1,5 @@
 rootProject.name = 'lucenekorean'
 include 'arirang.morph'
 include 'arirang.lucene-analyzer'
+include 'elasticsearch-analysis-arirang'
 
