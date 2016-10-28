@@ -1,0 +1,41 @@
+group 'org.elasticsearch'
+version '0.0.1'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile (
+            project (':elasticsearch-analysis-arirang'),
+
+            'junit:junit:4.11',
+            'org.projectlombok:lombok:1.16.10',
+
+            'org.apache.logging.log4j:log4j-core:2.6.1',
+            'org.apache.logging.log4j:log4j-api:2.6.1',
+            'org.apache.logging.log4j:log4j-1.2-api:2.6.1',
+
+            'org.hamcrest:hamcrest-all:1.3',
+
+            'org.elasticsearch:elasticsearch:2.4.1'
+    )
+    compile(
+            project(':arirang.morph'),
+            project(':arirang.lucene-analyzer'),
+            project(':elasticsearch-analysis-arirang'),
+
+            'com.google.guava:guava:19.0',
+            'org.projectlombok:lombok:1.16.10',
+            'org.apache.logging.log4j:log4j-core:2.6.1',
+            'org.apache.logging.log4j:log4j-api:2.6.1',
+            'org.apache.logging.log4j:log4j-1.2-api:2.6.1',
+
+            'org.elasticsearch:elasticsearch:2.4.1'
+
+    )
+}
