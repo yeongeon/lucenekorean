@@ -28,8 +28,9 @@ import static org.elasticsearch.common.settings.Settings.settingsBuilder;
 
 public class ArirangAnalyzerTest {
 
-    public String query = "2015년 11월 2일 추가 : 만일 Elasticsearch 2.0 이후 버전을 사용중이라면, Elasticsearch 2.0 에서의 인덱싱에 대한 성능 고려 사항 블로그 포스트를 확인하세요.";
+    //public String query = "2015년 11월 2일 추가 : 만일 Elasticsearch 2.0 이후 버전을 사용중이라면, Elasticsearch 2.0 에서의 인덱싱에 대한 성능 고려 사항 블로그 포스트를 확인하세요.";
     //public String query = "자동문이 ㄴ 자동완성되었다";
+    public String query = "언급없이";
 
     @Test
     public void testArirangAnalyzerNamedAnalyzer() throws Exception {

@@ -2,6 +2,9 @@ group 'org.elasticsearch'
 version '0.0.1'
 
 apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'distribution'
 
 sourceCompatibility = 1.8
 
@@ -9,9 +12,10 @@ repositories {
     mavenCentral()
 }
 
+
 dependencies {
     testCompile (
-            project (':elasticsearch-analysis-arirang'),
+            project(':arirang.lucene-analyzer'),
 
             'junit:junit:4.11',
             'org.projectlombok:lombok:1.16.10',
@@ -25,9 +29,7 @@ dependencies {
             'org.elasticsearch:elasticsearch:2.4.1'
     )
     compile(
-            project(':arirang.morph'),
             project(':arirang.lucene-analyzer'),
-            project(':elasticsearch-analysis-arirang'),
 
             'com.google.guava:guava:19.0',
             'org.projectlombok:lombok:1.16.10',
@@ -39,3 +41,13 @@ dependencies {
 
     )
 }
+
+task zip(type: Zip) {
+    from('build/libs') {
+        include '*.jar'
+    }
+    from '**/*.properties'
+}
+
+build.dependsOn(zip)
+

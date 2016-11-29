@@ -1,4 +1,4 @@
-rootProject.name = 'lucenekorean'
+rootProject.name = 'elasticserach-arirang-analyzer-plugin'
 include 'arirang.morph'
 include 'arirang.lucene-analyzer'
 include 'elasticsearch-analysis-arirang'
