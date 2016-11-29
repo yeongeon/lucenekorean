@@ -9,12 +9,14 @@ arirang.morph v1.1.0
 ```
 
 ### Base repo.
-https://lucenekorean.svn.sourceforge.net/svnroot/lucenekorean
+
+* https://lucenekorean.svn.sourceforge.net/svnroot/lucenekorean
 
 
 ### Refs.
-http://cafe.naver.com/korlucene
-https://github.com/HowookJeong/elasticsearch-analysis-arirang
+
+* http://cafe.naver.com/korlucene
+* https://github.com/HowookJeong/elasticsearch-analysis-arirang
 
 
                                         
